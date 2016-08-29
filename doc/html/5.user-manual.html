@@ -468,43 +468,72 @@ vertical-align:1px;
 </style>
 </head>
 <body>
-<p><a href="http://db.rex-soft.org" target="_blank"><img src="resource/logo.png" alt="" style="max-width:100%;"></a> 1.0</p>
+<p><a href="resource/logo.png" target="_blank"><img src="resource/logo.png" alt="" style="max-width:100%;"></a> 1.0</p>
 
 <hr>
 
 <blockquote>
-<p>目录</p>
+<p><strong>目录</strong></p>
 </blockquote>
 
-<p><a href="#user-content-summary"><strong>概述</strong></a><br>
-    <a href="#user-content-summary-intro">简介</a><br>
-    <a href="#user-content-summary-feature">功能</a><br>
-<a href="#user-content-environment"><strong>开发环境</strong></a><br>
-<a href="#user-content-config"><strong>全局配置文件</strong></a><br>
-    <a href="#user-content-config-load">加载配置文件</a><br>
-    <a href="#user-content-config-properties">外部资源文件</a><br>
-    <a href="#user-content-config-settings">全局设置</a><br>
-    <a href="#user-content-config-datasource">数据源</a><br>
-    <a href="#user-content-config-listener">监听</a><br>
-<a href="#user-content-functions"><strong>执行数据库操作</strong></a><br>
-    <a href="#user-content-functions-update">插入/更新/删除</a><br>
-    <a href="#user-content-functions-batch">批量更新</a><br>
-    <a href="#user-content-functions-getlist">查询多行记录</a><br>
-    <a href="#user-content-functions-get">查询单行记录</a><br>
-    <a href="#user-content-functions-call">调用</a><br>
-    <a href="#user-content-functions-transaction">事物</a><br>
-<a href="#user-content-express"><strong>扩展</strong></a><br>
-    <a href="#user-content-express-listener">监听</a><br>
-    <a href="#user-content-express-dialect">方言</a><br>
-    <a href="#user-content-express-logger">日志</a><br>
-    <a href="#user-content-express-dynamic">动态字节码</a><br>
-<a href="#user-content-class"><strong>接口列表</strong></a><br>
-    <a href="#user-content-class-Configuration">类Configuration</a><br>
-    <a href="#user-content-class-dialect">接口Dialect</a><br>
-    <a href="#user-content-class-listener">接口DBListener</a><br>
-    <a href="#user-content-class-ps">类Ps</a><br>
-    <a href="#user-content-class-rmap">类RMap</a><br>
-    <a href="#user-content-class-defaultDefinition">类DefaultDefinition</a></p>
+<ul>
+<li>
+<a href="#user-content-summary"><strong>概述</strong></a>
+
+<ul>
+<li><a href="#user-content-summary-intro">简介</a></li>
+<li><a href="#user-content-summary-feature">功能</a></li>
+</ul>
+</li>
+<li><a href="#user-content-environment"><strong>开发环境</strong></a></li>
+<li>
+<a href="#user-content-config"><strong>全局配置文件</strong></a>
+
+<ul>
+<li><a href="#user-content-config-load">加载配置文件</a></li>
+<li><a href="#user-content-config-properties">外部资源文件</a></li>
+<li><a href="#user-content-config-settings">全局设置</a></li>
+<li><a href="#user-content-config-datasource">数据源</a></li>
+<li><a href="#user-content-config-listener">监听</a></li>
+</ul>
+</li>
+<li>
+<a href="#user-content-functions"><strong>执行数据库操作</strong></a>
+
+<ul>
+<li><a href="#user-content-functions-update">插入/更新/删除</a></li>
+<li><a href="#user-content-functions-batch">批量更新</a></li>
+<li><a href="#user-content-functions-getlist">查询多行记录</a></li>
+<li><a href="#user-content-functions-get">查询单行记录</a></li>
+<li><a href="#user-content-functions-call">调用</a></li>
+<li><a href="#user-content-functions-transaction">事物</a></li>
+</ul>
+</li>
+<li>
+<a href="#user-content-express"><strong>扩展</strong></a>
+
+<ul>
+<li><a href="#user-content-express-listener">监听</a></li>
+<li><a href="#user-content-express-dialect">方言</a></li>
+<li><a href="#user-content-express-logger">日志</a></li>
+<li><a href="#user-content-express-dynamic">动态字节码</a></li>
+</ul>
+</li>
+<li>
+<a href="#user-content-class"><strong>接口列表</strong></a>
+
+<ul>
+<li><a href="#user-content-class-Configuration">类Configuration</a></li>
+<li><a href="#user-content-class-dialect">接口Dialect</a></li>
+<li><a href="#user-content-class-listener">接口DBListener</a></li>
+<li><a href="#user-content-class-ps">类Ps</a></li>
+<li><a href="#user-content-class-rmap">类RMap</a></li>
+<li><a href="#user-content-class-defaultDefinition">类DefaultDefinition</a></li>
+</ul>
+</li>
+</ul>
+
+<hr>
 
 
 
@@ -2300,7 +2329,7 @@ ps<span class="pl-k">.</span>addOutInt();                                     <s
     <tbody>
         <tr>
             <td><code>void</code></td>
-            <td>beginJtaTransaction()</td>
+            <td>beginJta()</td>
             <td>开启JTA事物。</td>
         </tr>
         <tr>
